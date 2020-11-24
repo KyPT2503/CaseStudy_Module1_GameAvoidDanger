@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        #display-score {
+            display:inline-block;
+            width:200px;
+            height:50px;
+            background-color:dodgerblue;
+            position:absolute;
+            top:30px;
+            left:20px;
+            font-size: 35px;
+        }
+        #display-heart {
+            display:inline-block;
+            width:200px;
+            height:50px;
+            background-color:dodgerblue;
+            position:absolute;
+            top:30px;
+            left:405px;
+        }
+    </style>
+</head>
+<body>
+<!---->
+<div id="game-container">
+    <canvas width="600" height="750" style="border:5px solid green;background-color:midnightblue" id="container"></canvas>
+    <!--script-->
+    <div id="display-heart" style="display:inline-block">
+        <img src="image/heart.png" alt="heart" width="30" height="30">
+    </div>
+    <!--Update Score-->
+    <div id="display-score"></div>
+</div>
+<div style="display:none" >
+    <img id="player" src="image/Player.png" height="150" width="86"/>
+    <img id="heart" src="image/heart.png" height="30" width="30"/>
+    <img id="thread" src="image/thread.png" height="150" width="45"/></div>
+<script src="Car.js"></script>
+<script src="Thread.js"></script>
+<script src="Heart.js"></script>
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,25 @@
+class Heart
+{
+    constructor(x,y)
+    {
+        this.x=x;
+        this.y=y;
+        this.width=80;
+        this.height=80;
+        this.image=document.getElementById('heart');
+    }
+    moveHeart()
+    {
+        this.y+=2;
+        if(this.y==750)
+        {
+            this.x=Math.random()*520;
+            this.y=-300;
+        }
+    }
+    reset()
+    {
+        this.x=Math.random()*520;
+        this.y=-1000;
+    }
+}
